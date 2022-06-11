@@ -1,0 +1,282 @@
+    /*imports*/
+    @import url('//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
+
+    /*elementos*/
+    *{
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        list-style: none;
+        
+    }
+
+
+    header, footer{
+        max-width: 95vw;
+        padding: 5vh;
+        margin: 3px;
+        align-items: center;
+        text-align:  center;
+        overflow: hidden;
+        text-shadow: 2vh 2vh .4vh rgba(234, 235, 235, 0.685);
+    }
+    h2{
+        text-align: center;
+        margin: 2vh;
+    }
+    
+    nav, ul, li{
+        display: flex;
+    }
+
+    ul{
+        padding: 0;
+    }
+    li{
+        background-color: rgba(57, 58, 58, 0.644);
+        margin: 1%;
+        padding: 1%;
+        color: white;
+        cursor: pointer;
+    }
+
+    p{
+        background-color: rgba(239, 243, 243, 0.685);
+        
+        padding: 5vh;
+    }
+    
+    i{
+        color: rgba(0, 0, 0, 0.685);
+
+    }
+
+
+    /*pseudoclasses*/
+
+
+
+
+
+
+    /*classes*/
+    .certificados i{
+        color: rgba(0, 0, 0, 0.685);
+        font-size: 8rem;
+        bottom: 1vh;
+    }
+
+
+    .container{
+        display: flex;
+        max-width: 100%;
+        margin: 3px;
+        align-items: center;
+        flex-direction: column;
+        text-align: center ;
+        z-index: (1);
+    }
+
+
+    .w-15{
+        width: 25%;
+
+
+    }
+
+    .w-25{
+        width: 25%;
+        
+
+    }
+
+    .w-30{
+        width: 30%;
+    }
+
+    .w-50{
+        width: 50%;
+    }
+
+    .w-75{
+        width: 70%;
+    }
+
+    .w-100{
+        width: 100%;
+    }
+
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        margin: 1px;
+        width: 100%;
+        align-items: center;
+        background-color: rgba(239, 243, 243, 0.685);
+    }
+
+    .img-wrapper{
+        background-color: rgba(239, 243, 243, 0.685);
+        display: flex;
+        position: relative;
+        border: 1px;
+        width: 100%;
+        padding: 0px;
+        
+        
+    }
+
+    .img-wrapper img{
+        border-radius: 105%;
+        margin:  5px 0 5px 5%;
+        box-shadow: .5vh .3vh 1vh;
+        max-width: 100%;
+        object-fit: contain;
+
+
+    }
+
+    .social-media{
+        display: flex;
+        font-size: 2rem;
+        background-color: rgba(239, 243, 243, 0.685);
+        justify-content: space-evenly; /*distribui um espacinho entre os elemttos*/
+    }
+
+    .certificados a{
+        text-decoration: none;
+        margin: 1px;
+        text-align: center;
+        align-items: center;
+    }
+
+
+
+    .projetos{
+        display: flex;
+        justify-content: space-evenly;
+        
+         
+    }
+
+    .card{ /*tamanho do card*/
+        width: 15rem;
+        height: 30rem;
+        position: relative;
+        margin: 5vh 5vh;
+
+    }
+
+    .card-img-wrapper{
+        width: 100%;
+        height: 100%;
+        border-radius: .5rem;
+        background-color: #000;
+    }
+    .card-img-wrapper img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: .5rem;
+        opacity: .8;
+
+    }
+
+    .card-info{ /*posição das info do card*/
+        position: absolute;
+        bottom: 0; /*p ficar dentro do card a partir do bottom (pé)*/
+        padding: 2rem;
+        text-shadow:  0 0.1rem 0.3rem rgba(0, 0, 0, .4);
+    }
+
+
+
+
+    /*<!- efeitos de hover->*/
+    .img-hover img:hover{
+        filter: opacity(.5);
+        
+        cursor: pointer;
+        
+    }
+    a:hover{
+        color: red;
+    }
+    mark:hover{
+        filter: invert(1);
+        cursor: pointer;
+    }
+    li:hover{
+                background-color: blueviolet;
+
+    }
+
+    .social-media i:hover{
+        font-size: 5vh;
+        color: blueviolet;
+    }
+    i:hover{
+    
+        color: blueviolet;
+    }
+
+
+    /*responsividade*/
+    @media (max-width:425px) and (orientation:portrait){
+
+    
+        nav{
+          width: 54vh;
+          
+          
+        }
+
+        .projetos{
+        display: flex;
+        flex-direction: column;
+        
+         
+    }
+
+    .card{ /*tamanho do card*/
+        width: 50vh;
+        height: 50vh;
+        margin: 5vh 5vh;
+        
+        
+    }
+
+    .card-img-wrapper{
+        width: 100%;
+        height: 100%;
+        border-radius: .5rem;
+        background-color: #000;
+    }
+    .card-img-wrapper img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: .5rem;
+        opacity: .8;
+
+    }
+
+    .card-info{ /*posição das info do card*/
+        position: absolute;
+        bottom: 0; /*p ficar dentro do card a partir do bottom (pé)*/
+        padding: 1px;
+        text-shadow:  0 0.1rem 0.3rem rgba(0, 0, 0, .4);
+    }
+    }
+
+
+    @media (max-width:770px) and (orientation:portrait){
+
+        .projetos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    }
